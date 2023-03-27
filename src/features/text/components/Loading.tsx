@@ -1,6 +1,9 @@
 export default function Loading() {
     return (
-        <div className="flex basis-full justify-center items-center">
+        <div
+            className="flex basis-full justify-center items-center"
+            data-testid="loading icon"
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"

@@ -6,9 +6,9 @@ export default function Result() {
     const { wordsPerMinute } = text;
     return (
         <div className="mt-7">
-            <p className="text-4xl text-center">
+            <h1 className="text-4xl text-center">
                 Speed: {wordsPerMinute} Words Per Minute
-            </p>
+            </h1>
         </div>
     );
 }

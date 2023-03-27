@@ -38,12 +38,9 @@ const TextContainer = () => {
             textValue &&
             letterArr.join("") === textValue.join("")
         ) {
-            const promise = dispatch(fetchText());
-            return () => {
-                promise.abort();
-            };
+            dispatch(fetchText());
         }
-    }, [gameOver, playing]);
+    }, [gameOver, playing, dispatch]);
 
     useEffect(() => {
         const promise = dispatch(fetchText());
